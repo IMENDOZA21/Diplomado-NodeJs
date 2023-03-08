@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="815f1aa9-0515-4073-86b9-8e3a85f4bc59" name="Changes" comment="ejercicio 2 promesa">
-      <change afterPath="$PROJECT_DIR$/async_await.js" afterDir="false" />
+    <list default="true" id="2af358c9-5597-47c8-9c3d-41000ccf76c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,19 +48,21 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="815f1aa9-0515-4073-86b9-8e3a85f4bc59" name="Changes" comment="" />
+      <changelist id="2af358c9-5597-47c8-9c3d-41000ccf76c4" name="Changes" comment="" />
       <created>1678280315185</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678280315185</updated>
       <workItem from="1678280317740" duration="5640000" />
       <workItem from="1678292549009" duration="6717000" />
+      <workItem from="1678303963339" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="se agregan archivos ejercicio callback">
       <created>1678291717808</created>
