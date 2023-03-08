@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="815f1aa9-0515-4073-86b9-8e3a85f4bc59" name="Changes" comment="se agregan archivos ejercicio callback">
-      <change afterPath="$PROJECT_DIR$/callbackHell.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
+    <list default="true" id="815f1aa9-0515-4073-86b9-8e3a85f4bc59" name="Changes" comment="ajuste gitignore">
+      <change afterPath="$PROJECT_DIR$/promise2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678280315185</updated>
       <workItem from="1678280317740" duration="5640000" />
-      <workItem from="1678292549009" duration="3397000" />
+      <workItem from="1678292549009" duration="5223000" />
     </task>
     <task id="LOCAL-00001" summary="se agregan archivos ejercicio callback">
       <created>1678291717808</created>
@@ -72,7 +70,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678291717809</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adicion de callbackHell.js  y promesas">
+      <created>1678297823043</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678297823043</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ajuste gitignore">
+      <created>1678297857861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678297857861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +115,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="se agregan archivos ejercicio callback" />
-    <option name="LAST_COMMIT_MESSAGE" value="se agregan archivos ejercicio callback" />
+    <MESSAGE value="Adicion de callbackHell.js  y promesas" />
+    <MESSAGE value="ajuste gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajuste gitignore" />
   </component>
 </project>
