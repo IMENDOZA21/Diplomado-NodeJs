@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fecha y hora constante</title>
+    <script>
+        function relojFecha() {
+            var miFecha = new Date();
+            var year = miFecha.getFullYear();
+            var month = miFecha.getMonth();
+            var dayn = miFecha.getDate();
+            var day = miFecha.getDay();
+            var hour = miFecha.getHours() >= 10 ? miFecha.getHours() : "0" + miFecha.getHours();
+            var minute = miFecha.getMinutes() >= 10 ? miFecha.getMinutes() : "0" + miFecha.getMinutes();
+            var second = miFecha.getSeconds() >= 10 ? miFecha.getSeconds() : "0" + miFecha.getSeconds();
+
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"];
+
+            var fecha = days[day] + " " + dayn + " of "
+                + months[month] + " of " + year + " " + hour + ":" + minute + ":" + second;
+            document.getElementById("fechahora").innerHTML = fecha;
+            setTimeout('relojFecha()',1000);
+        }
+    </script>
+</head>
+
+<body onload="relojFecha()">
+    <p id="fechahora"></p>
+</body>
+
+</html>
