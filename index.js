@@ -1,6 +1,6 @@
 const impar = require('is-odd');
 const par = require('is-even');
-const bcrypt = require('bcrypt');
+const bcryptjs = require("bcrypt");
 
 console.log(impar("4"));
 console.log(par(4));
@@ -12,9 +12,4 @@ async function encriptar(password){
     return hash;
 }
 
-console.log(encriptar("jjjj"));
-
-var password = "marcianito21";
-const salt = bcrypt.genSalt(10);
-const hash = bcrypt.hash(password, salt);
-console.log(hash);
+encriptar("marcianito21");
