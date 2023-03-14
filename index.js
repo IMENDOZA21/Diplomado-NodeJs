@@ -2,6 +2,7 @@ const impar = require('is-odd');
 const par = require('is-even');
 const bcryptjs = require("bcrypt");
 const citas = require("./citas/citas");
+const color = require("./colores/color")
 
 console.log(impar("4"));
 console.log(par(4));
@@ -18,3 +19,7 @@ encriptar("marcianito21").then(r => {
 });
 
 console.log(citas);
+console.log(color);
+console.log(color.getColorAzul());
+console.table(color.todosLosColores);
+console.log(color.getColorAleatorio());
