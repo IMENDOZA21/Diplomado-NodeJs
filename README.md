@@ -4,4 +4,4 @@ Diplomado de nodeJs COMFENALCO
 - Creacion de un propio modulo
 
 Pendiente:
-- Realizar modulo de una calculadora con las operaciones basicas
+- Realizar modulo de una calculadora con las operaciones basicas (NO SE SUBIO A NPM)
