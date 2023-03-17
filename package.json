@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/IMENDOZA21/Diplomado-NodeJs/issues"
   },
-  "homepage": "https://github.com/IMENDOZA21/Diplomado-NodeJs#readme"
+  "homepage": "https://github.com/IMENDOZA21/Diplomado-NodeJs#readme",
+  "dependencies": {
+    "pg": "^8.10.0"
+  }
 }

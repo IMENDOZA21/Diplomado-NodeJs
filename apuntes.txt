@@ -1,0 +1,1 @@
+psql -h localhost -d myPrueba -U admin //COMANDO POR TERMINAL PARA CONECTAR A DB EN EL CONTENEDOR DE POSTGRES
