@@ -3,11 +3,11 @@ const setupModels = require('./model');
 
 const sequelize = new Sequelize({
     host: 'localhost',
-    port: 5432,
-    username: 'admin',
+    port: 3306,
+    username: 'root',
     password: 'admin',
     database: 'myPrueba',
-    dialect: "postgres",
+    dialect: "mysql",
     logging: true
 });
 

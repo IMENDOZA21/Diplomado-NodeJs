@@ -30,6 +30,16 @@ services:
       postgres_network:
         aliases:
           - postgres_host
+  mysql_db:
+    image: mysql:5
+    container_name: mysql_db
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=myPrueba
+      - MYSQL_PORT=3306
+    ports:
+      - "3306:3306"
 
 networks:
   postgres_network:

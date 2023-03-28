@@ -1,6 +1,4 @@
 const express = require('express');
-const tasks = require('./tasks');
-const taskspool = require('./tasks.pool');
 const taskssequelize = require('./tasks.sequelize');
 const userssequelize = require('./users.sequelize');
 //Initializations
@@ -14,19 +12,6 @@ app.set('port', port);
 app.use(express.json());
 
 //Routes
-app.get('/tasks',tasks.getTasks);
-app.get('/tasks/:id',tasks.getById);
-app.post('/tasks',tasks.create);
-app.put('/tasks/:id',tasks.update);
-app.delete('/tasks/:id',tasks.deleteById);
-
-//Routes pool
-app.get('/tasksPool',taskspool.getTasks);
-app.get('/tasksPool/:id',taskspool.getById);
-app.post('/tasksPool',taskspool.create);
-app.put('/tasksPool/:id',taskspool.update);
-app.delete('/tasksPool/:id',taskspool.deleteById);
-
 //Routes sequelize
 //------------------tasks
 app.get('/tasksSequelize',taskssequelize.getTasks);
