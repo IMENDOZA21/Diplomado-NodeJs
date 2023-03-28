@@ -1,39 +1,18 @@
-const { models } = require('./db.sequelize');
-//const pool = require("./db.pool");
+const { models } = require('./../db.sequelize');
 
-/*
-async function getTasks2(req, res){
-    const query = "SELECT * FROM public.tasks ORDER BY id";
+async function getProducts(req, res){
     try{
-        const [data] = await sequelize.query(query);
+        const data = await models.Product.findAll();
         res.status(200)
             .json({
                 error: null,
-                tasks: data
+                products: data
             });
     }catch (e) {
         res.status(500)
             .json({
                 error: e.message,
-                tasks: null
-            });
-    }
-}
- */
-
-async function getTasks(req, res){
-    try{
-        const data = await models.Task.findAll();
-        res.status(200)
-            .json({
-                error: null,
-                tasks: data
-            });
-    }catch (e) {
-        res.status(500)
-            .json({
-                error: e.message,
-                tasks: null
+                products: null
             });
     }
 }
@@ -41,17 +20,17 @@ async function getTasks(req, res){
 async function getById(req, res){
     try{
         const { id } = req.params;
-        const task = await models.Task.findByPk(id);
+        const product = await models.Product.findByPk(id);
         res.status(200)
             .json({
                 error: null,
-                task: task
+                product: product
             });
     }catch (e) {
         res.status(500)
             .json({
                 error: e.message,
-                task: null
+                product: null
             });
     }
 }
@@ -59,17 +38,17 @@ async function getById(req, res){
 async function create(req, res){
     try{
         const data = req.body;
-        const newTask = await models.Task.create(data);
+        const newProduct = await models.Product.create(data);
         res.status(201)
             .json({
                 error: null,
-                task: newTask
+                product: newProduct
             });
     }catch (e) {
         res.status(500)
             .json({
                 error: e.message,
-                task: null
+                product: null
             });
     }
 }
@@ -78,8 +57,8 @@ async function update(req, res){
     try{
         const data = req.body;
         const { id } = req.params;
-        const task = await models.Task.findByPk(id);
-        await task.update(data);
+        const product = await models.Product.findByPk(id);
+        await product.update(data);
         res.status(200)
             .json({
                 error: null,
@@ -97,15 +76,15 @@ async function update(req, res){
 async function deleteById(req, res){
     try{
         const { id } = req.params;
-        const task = await models.Task.findByPk(id);
-        await task.destroy(task);
+        const product = await models.Product.findByPk(id);
+        await product.destroy(product);
         res.status(200)
             .json({
                 error: null,
                 message: 'DELETED'
             });
     }catch (e) {
-        res.status(500)
+        res.status(404)
             .json({
                 error: e.message,
                 message: 'Error service failed to delete'
@@ -113,5 +92,4 @@ async function deleteById(req, res){
     }
 }
 
-
-module.exports = { getTasks, getById, create, update, deleteById };
+module.exports = { getProducts, getById, create, update, deleteById };

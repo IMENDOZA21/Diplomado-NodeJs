@@ -1,4 +1,4 @@
-const { models } = require('./db.sequelize');
+const { models } = require('./../db.sequelize');
 
 async function getUsers(req, res){
     try{
