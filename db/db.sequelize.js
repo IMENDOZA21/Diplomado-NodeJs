@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-const setupModels = require('./model');
+const setupModels = require('../model');
 
 const sequelize = new Sequelize({
     host: 'localhost',

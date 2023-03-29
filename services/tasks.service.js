@@ -1,4 +1,4 @@
-const { models } = require('../db.sequelize');
+const { models } = require('../db/db.sequelize');
 //const pool = require("./db.pool");
 
 /*
